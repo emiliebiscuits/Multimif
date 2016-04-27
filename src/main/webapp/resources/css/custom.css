@@ -1,0 +1,42 @@
+.alert_modif{
+    display:none;
+    position: fixed;
+    top: 5px;
+    z-index:1060;
+    width:34vw;
+    left: 50%;
+    margin-left: -17vw;
+}
+
+#load_div{
+    display: none;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100vw;
+    height:100vh;
+    z-index:1070;
+    background-color: rgba(0,0,0,0.1);
+}
+
+#load_div img{
+    position: relative;
+    top:48%;
+    left: 48%;
+}
+
+textarea{
+    resize:none;
+}
+
+/* Make inline editables take the full width of their parents */
+.editable-container.editable-inline,
+.editable-container.editable-inline .control-group.form-group,
+.editable-container.editable-inline .control-group.form-group .editable-input,
+.editable-container.editable-inline .control-group.form-group .editable-input textarea,
+.editable-container.editable-inline .control-group.form-group .editable-input select,
+.editable-container.editable-inline .control-group.form-group .editable-input div,
+.editable-container.editable-inline .control-group.form-group .editable-input input:not([type=radio]):not([type=checkbox]):not([type=submit])
+{
+    width: 100%;
+}

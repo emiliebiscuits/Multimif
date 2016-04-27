@@ -1,0 +1,42 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.w3.org/2002/12/cal/icaltzd#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:j.1="http://data.semanticweb.org/ns/swc/ontology#"
+    xmlns:j.2="http://xmlns.com/foaf/0.1/" > 
+  <rdf:Description rdf:about="http://data.semanticweb.org/conference/eswc/2015/event/MonEvent">
+    <j.1:heldby>http://data.semanticweb.org/person/unknow</j.1:heldby>
+    <rdf:type>Workshop</rdf:type>
+    <j.0:description>Etiam mollis, metus cras amet.&#xD;
+</j.0:description>
+    <j.0:dtend>12/24/2015</j.0:dtend>
+    <j.2:homepage></j.2:homepage>
+    <j.0:location>Paris</j.0:location>
+    <j.0:location>Batiment C</j.0:location>
+    <j.2:name>MonEvent</j.2:name>
+    <j.1:hasRole>http://data.semanticweb.org/person/nanou4444@hotmail.fr</j.1:hasRole>
+    <j.0:dtstart>12/15/2015</j.0:dtstart>
+    <dc:subject>maths</dc:subject>
+    <dc:subject>la medinie</dc:subject>
+    <dc:subject>science</dc:subject>
+    <j.1:isSubEventOf>http://data.semanticweb.org/conference/eswc/2015/event/NewConf</j.1:isSubEventOf>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.semanticweb.org/conference/eswc/2015/event/NewConf">
+    <j.1:heldby>http://data.semanticweb.org/person/anna.benneton@orange.fr</j.1:heldby>
+    <rdf:type>conference</rdf:type>
+    <j.1:isSuperEventOf>http://data.semanticweb.org/conference/eswc/2015/event/MonEvent</j.1:isSuperEventOf>
+    <j.0:dtstamp>2015-12-04</j.0:dtstamp>
+    <j.0:description>Pellentesque id libero non id.&#xD;
+</j.0:description>
+    <j.0:dtend>12/31/2015</j.0:dtend>
+    <j.2:homepage></j.2:homepage>
+    <j.0:location>Paris</j.0:location>
+    <j.0:location>Chez Jawad</j.0:location>
+    <j.2:name>NewConf</j.2:name>
+    <j.1:hasRole>http://data.semanticweb.org/person/anna.benneton@orange.fr</j.1:hasRole>
+    <j.1:hasRole>http://data.semanticweb.org/person/nanou4444@hotmail.fr</j.1:hasRole>
+    <j.0:dtstart>12/27/2015</j.0:dtstart>
+    <dc:subject>maths</dc:subject>
+    <dc:subject>la medinie</dc:subject>
+  </rdf:Description>
+</rdf:RDF>

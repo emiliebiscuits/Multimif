@@ -1,0 +1,77 @@
+{
+	categories: [
+					{
+						id: ,
+						label: ,
+						name: 
+					},
+					...
+				],
+	events: [
+				{
+					categories: [],
+					children: ,
+					createdAt: ,
+					description: ,
+					duration: ,
+					endsAt: ,
+					homepage: ,
+					id: ,
+					lastModifiedAt: ,
+					locations: [],
+					name: ,
+					papers: ,
+					parent: ,
+					resource: ,
+					roles: ,
+					startsAt: ,
+					topics: ,
+					twitterWidgetToken:
+				},
+				...
+			],
+	locations:  [
+					{
+						id: ,
+						name: 
+					},
+					...
+			    ],
+	organizations:  [
+						{
+							id: ,
+							label: ,
+							members: []
+						},
+						...
+				    ],
+	persons: 	[
+					{
+						accounts: ,
+						affiliation: ,
+						depiction: ,
+						holdsRole: [],
+						id: ,
+						made: [],
+						mbox: ,
+						name: ,
+						websites: 
+					},
+					...
+	
+				],
+	publications: 	[
+						{
+							abstract: ,
+							authors: [],
+							hasgtag: ,
+							id: ,
+							presentedIn: ,
+							thumbnail: ,
+							title: ,
+							track: ,
+							uri: 
+						},
+						...
+					]
+}

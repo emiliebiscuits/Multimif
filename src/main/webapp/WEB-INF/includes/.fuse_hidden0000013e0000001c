@@ -1,0 +1,81 @@
+<div class="row" style="padding: 10px; border-bottom: darkgray 2px solid">
+    
+    <!-- LIEN POUR SE CONNECTER OU ALLEZ SUR SON COMPTE -->
+    <div class="pull-right" style="margin-top: 10px; margin-right: 15px">   
+        <c:choose>
+            <c:when test="${pseudo != null && pseudo != ''}">
+                <div id="log_div" style="display:none">
+                    <a href="" data-toggle="modal" data-target="#connexion_div">log-in</a> | 
+                    <a href="inscription.jsp">registration</a>
+                </div>
+                <div id="account_div">
+                    <!-- A FAIRE: LIEN REST USER -->
+                    <a href="user_account.jsp"><i class="glyphicon glyphicon-user"></i> <span>${pseudo}</span> (my account)</a> | 
+                    <a href="deconnexion.jsp">log-out</a>
+                </div>
+            </c:when>
+            <c:otherwise>
+                <div id="log_div">
+                    <a href="" data-toggle="modal" data-target="#connexion_div">log-in</a> | 
+                    <a href="inscription.jsp">registration</a>
+                </div>
+                <div id="account_div" style="display: none">
+                    <!-- A FAIRE: LIEN REST USER -->
+                    <a href="user_account.jsp"><i class="glyphicon glyphicon-user"></i> <span>${pseudo}</span> (my account)</a> | 
+                    <a href="deconnexion.jsp">log-out</a>
+                </div>
+            </c:otherwise>
+        </c:choose>
+    </div>
+
+    <h4><a href="index.jsp">SYMPOZER Ze Back-End</a></h4>
+
+
+    <!-- POP UP DE CONNEXION -->
+    <div id="connexion_div" class="modal fade" role="dialog">
+        <div class="modal-dialog" style="width: 500px">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4>Connection</h4>
+                </div>
+                
+                <div class="modal-body">
+                    <ul class="row text-center list-inline">
+                        <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li> | 
+                        <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li> | 
+                        <li><a href=""><i class="fa fa-linkedin fa-lg"></i></a></li> | 
+                        <li><a href=""><i style="-ms-transform: rotate(-90deg); -webkit-transform: rotate(-90deg); transform: rotate(-90deg);" class="fa fa-lg"><b>G</b></i></a></li>
+                    </ul>
+                    <hr>
+                    <form action="/multimif/connection.htm" id="connexion_form" class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Email</label>
+                            <div class="col-sm-9">
+                                <input name="email" placeholder="email..." type="text" class="form-control" autofocus/>
+                                <span class="help-block" style="display:none"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Password</label>
+                            <div class="col-sm-9">
+                                <input name="mdp" placeholder="Password..." type="password" class="form-control"/>
+                                <span class="help-block" style="display:none"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group text-center">
+                            <button class="btn btn-info" type="submit">Log-in</button>
+                            <span class="help-block" style="display:none"></span>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="modal-footer">
+                    <a href="/multimif/inscription.jsp">No account yet?</a> 
+                    <button type="button" class="btn btn-default btn-xs" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

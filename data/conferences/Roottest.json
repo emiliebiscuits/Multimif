@@ -1,0 +1,46 @@
+{
+  "@id" : "http://data.semanticweb.org/conference/eswc/2015/event/Roottest",
+  "http://data.semanticweb.org/ns/swc/ontology#heldby" : "http://data.semanticweb.org/person/anna.benneton@orange.fr",
+  "http://purl.org/dc/elements/1.1/subject" : "bibi",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : "conference",
+  "http://www.w3.org/2002/12/cal/icaltzd#description" : "Nam facilisis sem nec posuere.\r\n",
+  "http://www.w3.org/2002/12/cal/icaltzd#dtstamp" : "2015-12-03",
+  "http://www.w3.org/2002/12/cal/icaltzd#dtstart" : "11/30/2015",
+  "http://www.w3.org/2002/12/cal/icaltzd#location" : "lyon",
+  "http://xmlns.com/foaf/0.1/homepage" : "",
+  "http://xmlns.com/foaf/0.1/name" : "Roottest",
+  "@context" : {
+    "heldby" : {
+      "@id" : "http://data.semanticweb.org/ns/swc/ontology#heldby",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "dtstamp" : {
+      "@id" : "http://www.w3.org/2002/12/cal/icaltzd#dtstamp",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "description" : {
+      "@id" : "http://www.w3.org/2002/12/cal/icaltzd#description",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "homepage" : {
+      "@id" : "http://xmlns.com/foaf/0.1/homepage",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "location" : {
+      "@id" : "http://www.w3.org/2002/12/cal/icaltzd#location",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "name" : {
+      "@id" : "http://xmlns.com/foaf/0.1/name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "dtstart" : {
+      "@id" : "http://www.w3.org/2002/12/cal/icaltzd#dtstart",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "subject" : {
+      "@id" : "http://purl.org/dc/elements/1.1/subject",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    }
+  }
+}
